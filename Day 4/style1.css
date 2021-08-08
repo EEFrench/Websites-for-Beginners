@@ -1,0 +1,31 @@
+body {
+    margin: 2;
+}
+.navBar{
+    width: 100%;
+    background-color:purple;
+    margin: 1;
+    padding: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content:left;
+}
+
+.navBar.ul{
+    margin:0;
+    display:inline-block;
+}
+.navBar a {
+    color: orange;
+    font-size: 30px;
+    font-family: "French's Asylum";
+    src="./FrenchsAsylum.otf";
+    text-decoration: none;
+}
+.navBar li{
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: border .15s;
+}

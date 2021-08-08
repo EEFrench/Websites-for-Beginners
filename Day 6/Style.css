@@ -1,0 +1,78 @@
+header, nav, section, article, aside{
+    box-sizing: border-box;
+    font-family: "French's Asylum";
+    src="./FrenchsAsylum.otf";
+    text-decoration: none;
+    color: #ffa202;
+}
+
+body{
+    margin:0;
+    background-image: url(./background.png);
+}
+
+header{
+    background-color: #340146;
+    margin: 10px 10px;
+    min-height: 20vh;
+    padding: 10px;
+    box-shadow: 5px 5px gray;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    font-size: 30px;
+    padding: 10px;
+    text-shadow: 2px 2px #9a01cd;
+    border: 5px solid #ffa202
+    }
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #9a01cd;
+    color:#ffa202;
+    margin: 10px 10px;
+    min-height: 10vh;
+    padding: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #002a53;
+}
+
+a:hover, a:active {
+    background-color: #340146;
+}
+
+section, article, aside{
+    background-color: #002a53;
+    margin: 10px 10px;
+    min-height: 20vh;
+    padding: 10px;
+}
+
+footer{
+    background-color:#ffa202;
+    margin: 10px 10px;
+    min-height: 10vh;
+    padding: 5px;
+    font-family: "French's Asylum";
+    /* src="./FrenchsAsylum.otf"; */
+    text-decoration: none;
+    color:340146;
+}
+
+.content, aside{
+    width: 50%;
+    display: inline-block;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}

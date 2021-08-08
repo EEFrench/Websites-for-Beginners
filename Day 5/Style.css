@@ -1,0 +1,17 @@
+body{
+    margin:0;
+}
+header, nav, section, article, aside, footer{
+    background-color: #002a53;
+    margin: 10px 0;
+    min-height: 20vh;
+    padding: 10px;
+}
+.content, aside{
+    width: 50%;
+    display: inline-block;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}

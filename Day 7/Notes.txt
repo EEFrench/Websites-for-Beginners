@@ -1,0 +1,28 @@
+Notes on GitHub & GitBash
+
+commands you will use most :
+
+git status
+git add -A
+git commit -m "enter description here of what you’ve done"
+git branch -M main
+git push -u origin [repository]
+after your initial push you only need to type:
+git push
+
+When making a commit statement be short and 
+concise. Push several times with a short
+commit comment rather than make a long comment about a lot of changes.
+
+All your pushes are stored in the Repository, 
+so you can go back to them if things get 
+really broken.
+So commit and push often!
+
+You can push from the VSCode terminal as well. 
+from the menu choose "Terminal" -> 
+"New Terminal"
+In the terminal below near the word "powershell"
+is a "+" and a down arrow. Click the down arrow 
+and choose "Git Bash"
+It works just like the regular GitBash.

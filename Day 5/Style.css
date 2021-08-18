@@ -1,16 +1,23 @@
 body{
     margin:0;
 }
+
+/* SET STYLING FOR ALL THE ELEMENTS  */
 header, nav, section, article, aside, footer{
     background-color: #002a53;
     margin: 10px 0;
     min-height: 20vh;
     padding: 10px;
 }
+
+/* GIVE EQUAL SIZES TO CONTENT DIV AND ASIDE ELEMEMENT SET OVERALL ALIGNMENT */
 .content, aside{
     width: 50%;
     display: inline-block;
 }
+
+/* SET ALIGNMENT FOR CONTENT IN THE MAIN DIV  */
+/* SO THAT THEY ARE STACKED ATOP ONE ANOTHER */
 main{
     display: flex;
     justify-content: space-evenly;

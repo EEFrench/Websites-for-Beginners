@@ -1,6 +1,9 @@
+/* SET BODY MARGINS  */
 body {
     margin: 2;
 }
+
+/* GIVE NAVBAR COLOR AND SIZE  */
 .navBar{
     width: 100%;
     background-color:purple;
@@ -11,17 +14,23 @@ body {
     justify-content:left;
 }
 
+/* NAVBAR MARGINS & ALIGNMENT  */
 .navBar.ul{
     margin:0;
     display:inline-block;
 }
+
+/* ADD COLOR & FONT STYLE TO NAVBAR  */
 .navBar a {
     color: orange;
     font-size: 30px;
     font-family: "French's Asylum";
     src="./FrenchsAsylum.otf";
+    /* REMOVE UNDERLINE TO TEXT  */
     text-decoration: none;
 }
+
+/* ALIGNING TEXT ON NAVBAR  */
 .navBar li{
     display: inline-block;
     margin: 0;

@@ -1,24 +1,43 @@
-header, nav, section, article, aside{
-    box-sizing: border-box;
-    font-family: "French's Asylum";
-    src="./FrenchsAsylum.otf";
-    text-decoration: none;
-    color: #ffa202;
-}
-
+/* ADD MARGIN AND BACKGROUND IMAGE  */
 body{
     margin:0;
+    /* ADDING AN IMAGE IN CSS USES A DIFFERENT
+    SYNTAX. IF THE IMAGE FILE IS IN THE SAME
+    FOLDER USE url(./[image name]) WITHOUT QUOTES, 
+    IF IT'S IN A DIFFERENT FOLDER USE 2 DOTS
+    url(../[foldername]/[image name])
+    CSS USES  url & PARENTHESES RATHER THAN 
+    src= & QUOTES*/
     background-image: url(./background.png);
 }
 
+/* SET STYLING FOR ALL THE ELEMENTS  */
+header, nav, section, article, aside{
+    box-sizing: border-box;
+    /* ADDED CUSTOM FONT, BECUSE I COULD */
+    font-family: "French's Asylum";
+    /* REMOVES UNDERLINE  */
+    text-decoration: none;
+    /* TEXT COLOR  */
+    color: #ffa202;
+}
+
+/* CUSTOMIZE HEADER  */
 header{
     background-color: #340146;
+    /* SETS A MARGIN AROUND THE HEADER BOX  */
     margin: 10px 10px;
+    /* ENSURES THE HEADER IS 20% OF VEW HEIGHT */
     min-height: 20vh;
+    /* ADDS PADDING TO THE BOX */
     padding: 10px;
+    /* ADDS A GRAY SHADOW TO THE BOX  */
     box-shadow: 5px 5px gray;
+    /* ALIGNS ITEMS INTHE BOX SIDE BY SIDE  */
     display: flex;
+    /* ALIGNS CENTER VERTICALLY  */
     align-items: center;
+    /* JUSTIFIES THE CONTENT TO THE LEFT  */
     justify-content:left;
     font-size: 30px;
     padding: 10px;
@@ -26,8 +45,14 @@ header{
     border: 5px solid #ffa202
     }
 
+/* MAKE THE NAVBAR STICKY */
 nav{
+    /* SETS NAVBAR IN A PERMANENT SPOT 
+    IF THE PAGE WAS LARGE ENOUGH TO SCROLL 
+    THA NAVBAR WOULD STAY IN ONE PLACE*/
     position: sticky;
+    /* SETS THE POSITION OF NAVBAR AT 0 WHICH 
+    IS AT THE TOP */
     top: 0;
     background-color: #9a01cd;
     color:#ffa202;
@@ -42,13 +67,24 @@ a{
 }
 
 a:visited{
+    /* WHEN THE LINK HAS BEEN VISITED THE 
+    TEXT OF THE LINK CHANGES COLOR */
     color: #002a53;
 }
-
+/* WHEN THE CUSSOR HOVERS OVER THE LINK 
+A COLORED BOX APPEARS BEHIND THE TEXT */
 a:hover, a:active {
     background-color: #340146;
 }
 
+/* EVENLY ALIGNS CONTENTS OF "MAIN" */
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* SETS COLOR SIZES AND ALIGNMENT OF THE 
+ELEMENTS */
 section, article, aside{
     background-color: #002a53;
     margin: 10px 10px;
@@ -56,23 +92,23 @@ section, article, aside{
     padding: 10px;
 }
 
+/* CODING ORGANIZATION NOTE: TRY TO KEEP THE 
+CSS IN THE SAME ORDER AS THE ELEMENTS APPEAR
+IN THE HTML (I HAD TO REORGANIZE THIS AS I MADE NOTES)*/
+
+/* GIVE EQUAL SIZES TO CONTENT DIV AND ASIDE ELEMEMENT SET OVERALL ALIGNMENT */
+.content, aside{
+    width: 50%;
+    display: inline-block;
+}
+
+/* SET FOOTER  */
 footer{
     background-color:#ffa202;
     margin: 10px 10px;
     min-height: 10vh;
     padding: 5px;
     font-family: "French's Asylum";
-    /* src="./FrenchsAsylum.otf"; */
     text-decoration: none;
-    color:340146;
-}
-
-.content, aside{
-    width: 50%;
-    display: inline-block;
-}
-
-main{
-    display: flex;
-    justify-content: space-evenly;
+    color: #340146;
 }
